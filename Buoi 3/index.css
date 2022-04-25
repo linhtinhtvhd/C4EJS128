@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 8px;
+}
+
+.header {
+    display: flex;
+    background-color: rgb(76, 175, 80);
+    height: 70px;
+    align-items: center;
+}
+
+.header-logo {
+    width: 40%;
+}
+
+.header-logo p {
+    text-align: center;
+    line-height: 60px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.nav-bar {
+    width: 100%;
+}
+
+.header-menu {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.header-menu li {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+}
+
+.header-menu li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000;
+    margin-left: 50px;
+}
+
+.content-first {
+    height: 678px;
+    background-color: #000;
+}
+
+.content-hi p {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 60px 0;
+    border-bottom: solid 1px rgb(153, 150, 150);
+    font-weight: 700;
+}
+
+.content-about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ct {
+    color: rgb(76, 175, 80);
+    font-size: 60px;
+    text-align: center;
+    padding: 60px 0;
+    position: relative;
+    z-index: 0;
+}
+
+.ct::after {
+    content: "";
+    width: 90px;
+    height: 2px;
+    background-color: rgb(76, 175, 80);
+    position: absolute;
+    top: 70%;
+    right: 47%;
+}
+
+.content-about-img {
+    width: 370px;
+    height: 260px;
+}
+
+.content-about-ct {
+    color: #fff;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.content-second {
+    background-color: rgb(194, 192, 195);
+    padding-bottom: 60px;
+}
+
+.bl {
+    color: #000;
+}
+
+.content-projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bl::after {
+    content: "";
+    width: 90px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 70%;
+    right: 47%;
+}
+
+.projects span {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.projects li a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.content-thir {
+    background-color: #000;
+}
+
+.content-achievements-cha {
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 35px;
+}
+
+.content-achievements-con {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content-achievements {
+    color: #fff;
+}
+
+.content-achievements-ul {
+    margin-left: 170px;
+}
+
+.contact {
+    background-color: rgb(194, 192, 195);
+    padding-bottom: 40px;
+}
+
+.form {
+    background-color: #000;
+    width: 600px;
+    margin: auto;
+}
+
+.aa {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aa input {
+    min-width: 300px;
+    margin-right: 150px;
+}
+
+.aa span {
+    color: #fff;
+}
+
+.Message input {
+    height: 90px;
+}
+
+.number input {
+    min-width: 100px;
+    margin: 0 280px 0 0;
+}
+
+.form button {
+    width: 100px;
+    height: 25px;
+    font-weight: 800;
+    margin: 20px 0 40px 115px;
+}
+
+.link {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(76, 175, 80);
+    padding: 15px;
+    align-items: center;
+}
+
+.link span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.hihihi {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.hihihi span {
+    color: rgb(76, 175, 80);
+    font-size: 25px;
+    margin-left: 100px;
+    font-weight: 400;
+}
+
+.hihihi a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(76, 175, 80);
+    margin-right: 100px;
+}
