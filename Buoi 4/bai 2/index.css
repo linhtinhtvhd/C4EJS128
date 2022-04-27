@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: rebeccapurple;
+}
+
+.header {
+    margin: 0 324px;
+    padding: 24px 0;
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.product {
+    margin: 0 324px;
+    padding: 24px;
+}
+
+.product h2 {
+    margin-bottom: 10px;
+}
+
+.product__content {
+    padding: 20px;
+    border: 1px solid #c9c9c9;
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px rgb(0 0 0 / 15%);
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 7px 7px 0 0;
+    margin-bottom: 20px;
+}
+
+.product__content h3 {
+    color: rebeccapurple;
+    align-items: start;
+    margin-bottom: 7px;
+}
+
+.product__content h3::after {
+    content: "4,950,000 ₫";
+    color: rebeccapurple;
+    font-style: italic;
+    background-color: #eddbff;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 4px;
+}
+
+.product__content p {
+    margin-bottom: 19px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: rebeccapurple;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+footer {
+    border-top: 2px solid rebeccapurple;
+}
+
+.footer {
+    margin: 0 324px;
+    padding: 24px;
+}
+
+.footer p {
+    margin: 0 0 20px
+}

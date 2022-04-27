@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 1px 0;
+    border-top: 2px solid rgb(199, 43, 61);
+    border-bottom: 2px solid rgb(199, 43, 61);
+}
+
+.header__content {
+    border-top: 2px solid rgb(199, 43, 61);
+    border-bottom: 2px solid rgb(199, 43, 61);
+    background-color: rgb(249, 221, 231);
+}
+
+.header__content p {
+    font-size: 40px;
+    color: rgb(199, 43, 61);
+    margin: 10px 0 10px 50px;
+    font-weight: 600;
+}
+
+.list__content {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+.list__option {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.l:last-child {
+    color: red;
+    margin-left: 4px;
+}
+
+.l:not(:last-child)::before {
+    content: "(";
+    margin-right: 2px;
+    font-weight: 500;
+}
+
+.l:not(:first-child)::after {
+    content: ")";
+    margin-left: 2px;
+    font-weight: 500;
+}
+
+.list__week {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.list__week-f,
+.list__week-t {
+    margin: 20px 0 0 20px;
+    border: 3px solid rgb(51, 54, 222);
+    display: inline-block;
+    background-color: rgb(206, 228, 228);
+}
+
+.list__week-f ul,
+.list__week-t ul {
+    padding: 40px 20px;
+    font-size: 18px;
+    color: rgb(51, 54, 222);
+    font-weight: 600;
+}
+
+.list__week-f p,
+.list__week-t p {
+    padding-bottom: 20px;
+}
+
+.list__week-f p::after {
+    content: "The Romantic Movement";
+    font-size: 18px;
+    color: rgb(51, 54, 222);
+    font-weight: 600;
+    font-style: italic;
+    padding: 0 20px 0 5px;
+}
+
+.list-li {
+    margin-left: 30px;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.list__week-f ul li:nth-child(4) {
+    color: red;
+}
+
+.list__week-f ul li:nth-child(2)::after {
+    content: "Rip Van Winkle";
+    color: rgb(34, 31, 31);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 20px 0 5px;
+    font-style: italic;
+}
+
+.list__week-f ul li:nth-child(3)::after {
+    content: "The Raven";
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 20px 0 5px;
+    font-style: italic;
+}
+
+.list__week-f ul li:nth-child(4)::after {
+    content: "Song of Myself";
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 20px 0 5px;
+    font-style: italic;
+}
+
+.list__week-t ul li:nth-child(2)::after {
+    content: "The Gift of the Magi";
+    color: rgb(34, 31, 31);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 20px 0 5px;
+    font-style: italic;
+}
+
+.list__week-t ul li:nth-child(3)::after {
+    content: "Renascence";
+    color: rgb(34, 31, 31);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 20px 0 5px;
+    font-style: italic;
+}
+
+.list__week-t ul li:nth-child(4)::after {
+    content: "Lilacs";
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 20px 0 5px;
+    font-style: italic;
+}
+
+.list__week-t ul li:nth-child(4) {
+    color: red;
+}
