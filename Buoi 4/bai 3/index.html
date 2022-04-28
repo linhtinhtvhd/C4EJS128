@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="netflix">
+            <div class="header">
+                <div class="logo">
+                    <a href="">
+                        <h1>NETFLIX</h1>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <div class="sighin">
+                    <div class="sighin__content">
+                        <div class="sighin__content-login">
+                            <h1>Đăng nhập</h1>
+                            <form action="">
+                                <div class="tendangnhap">
+                                    <div class="taikhoan">
+                                        <input class="dangnhap" id="id_userLoginId" type="email">
+                                        <label class="content_dangnhap" for="id_userLoginId">Email hoặc số điện thoại</label>
+                                    </div>
+                                    <!-- <div class="loi">Vui lòng nhập email hoặc số điện thoại hợp lệ.</div> -->
+                                </div>
+                                <div class="tendangnhap">
+                                    <div class="taikhoan">
+                                        <input class="dangnhap" id="id_userLoginId" type="password">
+                                        <label class="content_dangnhap" for="id_userLoginId">Mật khẩu</label>
+                                    </div>
+                                    <!-- <div class="loi">Mật khẩu của bạn phải chứa từ 4 đến 60 kí tự.</div> -->
+                                </div>
+                                <div class="btn">Đăng nhập</div>
+                                <div class="form_help">
+                                    <div class="login_remember">
+                                        <input type="checkbox" name="" id="checked">
+                                        <label for="checked">Ghi nhớ tôi</label>
+                                    </div>
+                                    <a href="">Bạn cần trợ giúp?</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="sighin__footer">
+                            <div class="link__fb">
+                                <button>
+                                    <img src="https://assets.nflxext.com/ffe/siteui/login/images/FB-f-Logo__blue_57.png" alt="">
+                                    <span>Đăng nhập bằng tài khoản Facebook</span>
+                                </button>
+                            </div>
+                            <div class="sighup">
+                                <span>Bạn mới tham gia NetFlix</span>
+                                <a href="">Đăng kí ngay.</a>
+                            </div>
+                            <div class="end">
+                                <span>Trang này được Google reCAPTCHA bảo vệ để đảm bảo bạn không phải là robot. </span>
+                                <button class="btn-2">Tìm hiểu thêm</button>
+                                <p class="timhieuthem">Thông tin do Google reCAPTCHA thu thập sẽ tuân theo
+                                    <a href="">Chính sách Quyền riêng tư</a> and <a href="">Điều khoản dịch vụ</a> của Google, và được dùng để cung cấp, duy trì và cải thiện dịch vụ reCAPTCHA cũng như các mục đích bảo mật nói chung (thông tin này không
+                                    được dùng để cá nhân hóa quảng cáo của Google).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer">
+                    <div class="footer-top">
+                        <a href="">Bạn có câu hỏi? Liên hệ với chúng tôi.</a>
+                    </div>
+                    <div class="footer-bot">
+                        <ul>
+                            <li class="li">
+                                <a href="">Câu hỏi thường gặp</a>
+                            </li>
+                            <li class="li">
+                                <a href="">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="li">
+                                <a href="">Điều khoản sử dụng</a>
+                            </li>
+                            <li class="li">
+                                <a href="">Quyền riêng tư</a>
+                            </li>
+                            <li class="li">
+                                <a href="">Tùy chọn cookie</a>
+                            </li>
+                            <li class="li">
+                                <a href="">Thông tin doanh nghiệp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <section>
+                        <label for="cars"></label>
+                        <select name="cars" id="cars">
+                          <option value="volvo">Tiếng Việt</option>
+                          <option value="saab">Tiếng Anh</option>
+                        </select>
+                    </section>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector('.btn-2')
+        const modal = document.querySelector('.timhieuthem')
+
+        function show() {
+            modal.classList.add('open')
+        }
+
+        function close() {
+            btn.classList.add('dong')
+        }
+        btn.addEventListener('click', show)
+        btn.addEventListener('click', close)
+    </script>
+</body>
+
+</html>
