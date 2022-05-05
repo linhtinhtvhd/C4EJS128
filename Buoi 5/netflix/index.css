@@ -89,6 +89,7 @@
 
 .dangnhap:focus {
     outline: none;
+    background-color: rgb(29, 31, 29);
 }
 
 .content_dangnhap {
@@ -97,6 +98,11 @@
     top: 50%;
     transform: translateY(-50%);
     color: #8c8c8c;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
 }
 
 .loi {
