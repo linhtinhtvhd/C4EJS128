@@ -23,3 +23,25 @@ for (let i = 0; i < numberArr.length; i++) {
 console.log(socantim)
 
 //Bai 2:
+
+function pageCount(n, p) {
+    let solanlatxuoi = 0;
+    let solanlatnguoc = 0;
+    for (let i = 1; i < p; i += 2) {
+        solanlatxuoi += 1
+    }
+    if (n % 2 == 0) {
+        for (let i = n; i > p; i -= 2) {
+            solanlatnguoc += 1;
+        }
+    } else {
+        for (let i = n - 1; i > p; i -= 2) {
+            solanlatnguoc += 1;
+        }
+    }
+    if (solanlatnguoc > solanlatxuoi) {
+        return solanlatxuoi
+    }
+    return solanlatnguoc
+}
+console.log(pageCount(8, 5))
