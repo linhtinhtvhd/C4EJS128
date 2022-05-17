@@ -23,12 +23,3 @@ for (let i = 0; i < numberArr.length; i++) {
 console.log(socantim)
 
 //Bai 2:
-let solanlatxuoi = 0;
-let solanlatnguoc = 0;
-for (let i = 1; i < 8; i += 2) {
-    solanlatxuoi += 1
-}
-for (let i = 15; i >= 8; i -= 3) {
-    solanlatnguoc += 1
-}
-console.log(solanlatxuoi, solanlatnguoc);
