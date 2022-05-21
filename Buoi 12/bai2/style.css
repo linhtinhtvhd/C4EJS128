@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(-90deg, #7d5fff, #7158e2);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.search {
+    background-color: #fff;
+    height: 50px;
+    position: relative;
+}
+
+input {
+    border: none;
+    font-size: 18px;
+    padding: 14.8px;
+    display: none;
+}
+
+button:focus,
+input:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50.4px;
+    width: 50px;
+}
+
+i {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+    width: 200px;
+}
+
+.activebtn {
+    transform: translateX(200px);
+}
