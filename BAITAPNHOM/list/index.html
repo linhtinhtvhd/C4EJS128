@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrap width_80 ">
+            <a href="../index.html" class="header__logo">
+                <img class="logo_img" src="../assets/logo@2x.webp" alt="logo" />
+            </a>
+            <div class="header__item">
+                <div class="nav">
+                    <div class="nav-item">
+                        <a href="../index.html" class="nav-link">Trang chủ</a
+              >
+            </div>
+            <div class="nav-item amthuc">
+              Ẩm thực
+              <ul class="amthuccacnuoc">
+                <li class="amthuctungnuoc">
+                  <a href="../detail/index.html?coutry=1">Việt Nam</a>
+                        </li>
+                        <li class="amthuctungnuoc">
+                            <a href="../detail/index.html?coutry=2">Hàn Quốc</a>
+                        </li>
+                        <li class="amthuctungnuoc">
+                            <a href="../detail/index.html?coutry=3">Nhật Bản</a>
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="nav-item">
+                        <a href class="nav-link">Liên hệ</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href class="nav-link">Cửa hàng</a>
+                    </div>
+                </div>
+                <div class="header__social">
+                    <div class="header__social-item" title="Facebook">
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="header__social-item" title="Twitter">
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="header__social-item" title="Pinterest">
+                        <a href="">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                    <div class="header__social-item" title="instagram">
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__search">
+
+                    <input class="header-ip" type="text" placeholder="Search...">
+                    <button class="header-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container ">
+        <div class="tenmonan">
+        </div>
+        <div class="swiper_container width_80">
+        </div>
+        <div class="share">
+            <button>SHARE
+                <i class="fa-brands fa-facebook-f"></i>
+            </button>
+            <button>SHARE
+                <i class="fa-brands fa-instagram"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="cmt width_80">
+        <form action="">
+            <span>2 bình luân</span>
+            <input type="text" placeholder="Viết bình luận">
+            <button> Bình luận</button>
+            <div class="dacmt">
+                <div class="cmt_mng">
+                    <div class="avt"></div>
+                    <div class="thongtinbl">
+                        <div class="ten">Linh đẹp trai</div>
+                        <p>Tuyệt vời quá!</p>
+                        <div class="like_cmt">
+                            <button>Thích</button>
+                            <button>Phản hồi</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cmt_mng">
+                    <div class="avt"></div>
+                    <div class="thongtinbl">
+                        <div class="ten">Linh xinh gái</div>
+                        <p>Món ăn này nấu thật dễ</p>
+                        <div class="like_cmt">
+                            <button>Thích</button>
+                            <button>Phản hồi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <script src="./main.js"></script>
+    <script>
+        const btnHeader = document.querySelector('.header-btn')
+        const ipHeader = document.querySelector('.header-ip')
+
+        function headerIpAct() {
+            ipHeader.classList.add('active_ipH')
+            btnHeader.classList.add('header-btn-act')
+        }
+        btnHeader.addEventListener('click', headerIpAct)
+    </script>
+</body>
+
+
+</html>
